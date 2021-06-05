@@ -1,0 +1,298 @@
+/* layout */
+.cluster{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cluster > *{
+    margin: var(--space-s);
+}
+
+.top-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-primary-bg);
+    font-size: 0.9vw;
+    color:#8C8D9C;
+}
+
+.top-line > *{
+    padding-right:1vw;
+    margin: 1vw 0;
+}
+
+.top-line p{
+    font-size: 0.9vw;
+}
+
+/* main content section */
+.top-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--color-primary-bg);
+    margin-bottom: 5vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
+
+#check-icon{
+    margin-left: 0;
+    margin-right: var(--space-md);
+}
+
+#check-icon-mobile{
+    display: none;
+}
+
+#main-img{
+    height: 15vw;
+    margin-left: 1vw;
+}
+
+.content{
+    margin-left: 7vw;
+}
+
+.content > *{
+    margin: 2vw 0;
+}
+
+.mobile-btn{
+    display: none;
+}
+
+#left-btn{
+    margin-right: 20vw;
+    background-color: var(--color-primary-bg);
+    color: var(--gray);
+    border: 1.5px solid var(--color-primary-brand);
+}
+
+
+/* recommendation */
+.reco-container h3{
+    text-align: center;
+}
+
+.stack{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--color-primary-bg);
+    padding: 2vw 1.8vw;
+}
+
+.stack:hover{
+    transition: box-shadow .3s;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.centre{
+    align-items: center;
+}
+
+.grid-container{
+    margin: var(--space-xl) 0;
+}
+
+.grid-container h3{
+    margin: var(--space-sm) var(--space-s);
+}
+
+#item-img {
+    height: 12vw;
+    width: 12vw;
+    align-items: center;
+}
+
+.ori-price{
+    font-size: var(--text-sm);
+    color: var(--color-secondary-light);
+    text-decoration: line-through;
+}
+
+/* Responsive design for tablet */
+@media not screen and (min-width: 769px){
+    /* Overall logo, img, icon sizes */
+    #check-icon{
+        display: none;
+    }
+    #check-icon-mobile{
+        display:initial;
+    }
+    #main-img {
+        height: 25vw;
+        margin-left: 4.5vw;
+    }
+    #desktop-btn{
+        display: none;
+    }
+    .mobile-btn{
+        display: flex;
+        flex-direction: column;
+        margin: 5vw 0;
+        gap: 3vw;
+    }
+    #item-img {
+        height: 35vw;
+        width: 35vw;
+    }
+
+    /* Overall layout */
+    .top-line{
+        display: none;
+    }
+    .flex-row{
+        margin-bottom: 2vw;
+    }
+    .int-p {
+        padding: 5vw 3vw;
+    }
+    #media-p {
+        padding:0;
+    }
+    .content {
+        margin-left: 2vw;
+        width: 60vw;
+    }
+    .secondary-btn{
+        width: 93vw;
+        height: 10vw;
+        font-size: 3vw;
+        padding-top: 3.5vw;
+    }
+    #left-btn{
+        margin-right: 0;
+    }
+    .top-main .mobile-btn{
+        justify-content: center;
+    }
+    .stack{
+        width: 48vw;
+        height: 75vw;
+        margin: 0;
+        gap: 4vw;
+    }
+    .grid-container .cluster{
+        gap: 2vw 0;
+    }
+    .grid-btn {
+        width: 30vw;
+        height: 8vw;
+        font-size: 3vw;
+    }
+
+    /* Overall fonts size */
+    h4{
+        font-size: 3.5vw;
+        margin-left:2vw;
+    }
+    h3{
+        font-size: 4vw;
+    }
+    .grid-container h3{
+        font-size: 4vw;
+    }
+    .grid-container p{
+        font-size: 3vw;
+    }
+    .ori-price{
+        font-size: 1.5vw;
+    }
+}
+
+
+/* Responsive design for mobile */
+@media screen and (max-width: 425px){
+    /* Overall logo, img, icon sizes */
+    #check-icon{
+        display: none;
+    }
+    #check-icon-mobile{
+        display:initial;
+    }
+    #main-img {
+        height: 27vw;
+        margin-left: 3vw;
+    }
+    #desktop-btn{
+        display: none;
+    }
+    .mobile-btn{
+        display: flex;
+        flex-direction: column;
+        margin: 5vw 0;
+        gap: 2vw;
+    }
+    #item-img {
+        height: 35vw;
+        width: 35vw;
+    }
+
+    /* Overall layout */
+    .top-line{
+        display: none;
+    }
+    .flex-row{
+        margin-bottom: 2vw;
+    }
+    .int-p {
+        padding: 5vw 3vw;
+    }
+    #media-p {
+        padding:0;
+    }
+    .content {
+        margin-left: 2vw;
+        width: 60vw;
+    }
+    .secondary-btn{
+        width: 93vw;
+        height: 13vw;
+        font-size: 4.5vw;
+        padding-top: 4vw;
+    }
+    #left-btn{
+        margin-right: 0;
+    }
+    .top-main .mobile-btn{
+        justify-content: center;
+    }
+    .stack{
+        width: 100vw;
+        height: 80vw;
+        margin: 0;
+        gap: 4vw;
+    }
+    .grid-container .cluster{
+        gap: 4vw 0;
+    }
+    .grid-btn {
+        width: 35vw;
+        height: 9vw;
+        font-size: 4vw;
+    }
+
+    /* Overall fonts size */
+    h4{
+        font-size: 4vw;
+        margin-left:2vw;
+    }
+    h3{
+        font-size: 4.5vw;
+    }
+    .grid-container h3{
+        font-size: 4.5vw;
+    }
+    .grid-container p{
+        font-size: 4vw;
+    }
+    .ori-price{
+        font-size: 2vw;
+    }
+}

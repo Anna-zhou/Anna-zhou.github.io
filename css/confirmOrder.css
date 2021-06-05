@@ -1,0 +1,206 @@
+/* layout */
+html {
+    background-color: var(--color-primary-bg);
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 2vw;
+    justify-content: space-between;
+}
+.mt-1{
+    margin-top: 1vw;
+}
+
+.mb-1{
+    margin-bottom: 1vw;
+}
+
+.mt-3 {
+    margin-top: 3vw;
+}
+
+.mb-3 {
+    margin-bottom: 3vw;
+}
+
+.mx-2{
+    margin: 0 2vw;
+}
+
+h2{
+    margin-left: 2vw;
+}
+
+.bottom-line{
+    border-bottom: 1.8px solid var(--gray-light);
+    padding: 0.5vw 0;
+}
+
+/* confirm content layout */
+.content{
+    width: 80vw;
+    height: 100%;
+    background-color: white;
+    padding: 1vw;
+    margin-bottom: 2vw;
+}
+
+.space-between{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content ul{
+    list-style-type: square;
+    list-style-position: outside;
+    padding: 1vw 1.5vw;
+}
+
+.content li{
+    padding: 0.5vw 0;
+}
+
+#sm-text{
+    font-size: var(--text-sm);
+}
+
+#summary p{
+    padding: 1vw 0;
+}
+
+#item-img{
+    padding-right: 0.5vw;
+    width: 7vw;
+}
+
+#item{
+    align-items: flex-start;
+}
+
+/* Responsive design for tablet */
+@media not screen and (min-width: 769px){
+    /* image size */
+    #item-img {
+        width: 23vw;
+        height: auto;
+    }
+    /* Overall layout */
+    .int-p {
+        padding: 0;
+    }
+    .main{
+        width:100vw;
+        padding-top: 3vw;
+    }
+    .content{
+        width: 100%;
+        height: auto;
+        padding: 4vw;
+    }
+    #icon{
+        font-size: 7vw;
+    }
+    .px-4{
+        padding-left: 4vw;
+    }
+    #col{
+        flex-direction: column;
+    }
+    #summary p {
+        padding: 2vw 0;
+    }
+    .flex-col > *{
+        padding: 2vw 0;
+    }
+    .mb-1 {
+        margin-bottom: 2vw;
+    }
+
+    /* Overall fonts size */
+    h2{
+        font-size: 4.5vw;
+        padding: 3vw;
+        margin-top: 4vw;
+    }
+    h4{
+        font-size: 3.5vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+    .content ul{
+        margin: 0 4vw;
+        padding: 0;
+    }
+    .content li{
+        font-size: 3vw;
+        padding: 1vw 0;
+        line-height: 2;
+    }
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 425px){
+    /* image size */
+    #item-img{
+        margin-right: 2vw;
+        width: 30vw;
+    }
+
+    /* Overall layout */
+    .int-p {
+        padding: 0;
+    }
+    .main{
+        width:100vw;
+        padding-top: 3vw;
+    }
+    .content{
+        width: 100%;
+        height: auto;
+        padding: 4vw;
+    }
+    #icon{
+        font-size: 6vw;
+    }
+    .px-4{
+        padding-left: 4vw;
+    }
+    #col{
+        flex-direction: column;
+    }
+    #summary p {
+        padding: 3vw 0;
+    }
+    .flex-col > *{
+        padding: 2vw 0;
+    }
+    .mb-1 {
+        margin-bottom: 4vw;
+    }
+
+    /* Overall fonts size */
+    h2{
+        font-size: 5.5vw;
+        padding: 3vw;
+        margin-top: 4vw;
+    }
+    h4{
+        font-size: 4.5vw;
+    }
+    p{
+        font-size: 3.7vw;
+    }
+    .content ul{
+        margin: 0 4vw;
+        padding: 0;
+    }
+    .content li{
+        font-size: 3.5vw;
+        padding: 1vw 0;
+        line-height: 2;
+    }
+}

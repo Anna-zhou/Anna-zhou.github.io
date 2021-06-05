@@ -1,0 +1,26 @@
+:root{
+    --color-primary-bg:#F3F3F7;
+    --color-primary-bar:#E7E7EE;
+    --color-primary-brand:#FF6A00;
+
+    --color-secondary-dark:#1C1D29;
+    --color-secondary-light:#373A52;
+    --color-active:#B6B7C8;
+
+    --gray:#8C8D9C;
+    --gray-light:#D6D6D6;
+}
+
+
+/* common color class*/
+.secondary-light{
+    color: var(--color-secondary-light);
+}
+
+.brand-color{
+    color: var(--color-primary-brand);
+}
+
+.white-bg{
+    background-color: white;
+}

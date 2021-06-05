@@ -1,0 +1,194 @@
+/* layout */
+.cluster{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cluster > *{
+    margin: var(--space-s);
+}
+
+/* main content section */
+.top-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary-bg);
+    padding: 0 var(--external-p);
+}
+
+.slider-content > *{
+    margin: var(--space-md);
+}
+
+.slider-content ul{
+    margin: var(--space-lg) var(--space-md);
+}
+
+.slider-content h4{
+    margin: var(--space-md);
+}
+
+#main-img{
+    height: 39vw;
+}
+
+.stack{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--color-primary-bg);
+    padding: 2vw 1.8vw;
+}
+.stack:hover{
+    transition: box-shadow .3s;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.centre{
+    align-items: center;
+}
+
+.grid-container{
+    margin: var(--space-xl) 0;
+}
+
+.grid-container h3{
+    margin: var(--space-sm) var(--space-s);
+}
+
+#item-img {
+    height: 12vw;
+    width: 12vw;
+    align-items: center;
+}
+
+.ori-price{
+    font-size: var(--text-sm);
+    color: var(--color-secondary-light);
+    text-decoration: line-through;
+}
+
+/* Responsive design for tablet */
+@media not screen and (min-width: 769px){
+    /* Overall logo, img, icon sizes */
+    #side-icon{
+        display: none;
+    }
+    #main-img{
+        height:70vw;
+    }
+
+    /* Overall layout */
+    .grid-container .cluster{
+        justify-content: space-evenly;
+        gap: 2vw;
+    }
+    .top-main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .slider-content{
+        text-align: center;
+        padding-bottom: 4vw;
+    }
+    #media-t{
+        display: none;
+    }
+    .stack{
+        width: 30vw;
+        height: 43vw;
+        gap: 4vw;
+    }
+    #item-img {
+        height: 20vw;
+        width: 20vw;
+    }
+    .flex-row{
+        flex-direction: column-reverse;
+    }
+
+    /* Overall fonts size */
+    .nav_navigation li{
+        font-size: 2vw;
+    }
+    .slider-content h1{
+        font-size: 5vw;
+    }
+    .slider-content h4{
+        font-size: 2.5vw;
+        margin: 3vw;
+    }
+    .slider-content a{
+        font-size: 2vw;
+        padding: 2vw 5vw;
+    }
+    .grid-container h3{
+        font-size: 3vw;
+        margin-left: 5vw;
+    }
+    .grid-container p{
+        font-size: 2vw;}
+
+    .ori-price{
+        font-size: 2vw;
+    }
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 425px){
+    /* Overall logo, img, icon sizes */
+    .logo {
+        height: 10vw;
+        width: 9.9vw;
+    }
+    #main-img {
+        height: 95vw;
+    }
+    #item-img {
+        height: 35vw;
+        width: 35vw;
+    }
+
+    /* Overall layout */
+    #media-p{
+        padding: 0;
+    }
+    .stack {
+        width: 48vw;
+        height: 60vw;
+        margin: 0;
+    }
+    .centre {
+        justify-content: space-evenly;
+    }
+    .grid-container .cluster{
+        justify-content: space-between;
+        gap: 4vw 2vw;
+    }
+
+    /* Overall fonts size */
+    .slider-content h1{
+        font-size: 7vw;
+    }
+    .slider-content h4 {
+        font-size: 4.5vw;
+        margin: 4vw;
+    }
+    .slider-content a {
+        font-size: 4vw;
+        padding: 3vw 6vw;
+    }
+    .grid-container h3 {
+        font-size: 4.5vw;
+        margin-left: 3vw;
+        margin-bottom: 3vw;
+    }
+    .grid-container p {
+        font-size: 3vw;
+    }
+}

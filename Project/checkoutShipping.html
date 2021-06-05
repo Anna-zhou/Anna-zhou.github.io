@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout-Shipping</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/checkhoutShipping.css">
+    <script src="https://kit.fontawesome.com/c34ab90d24.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../Image/favicon.ico"/>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- nav bar -->
+        <nav class="navbar" id="checkout-nav">
+            <a href="./index.html"><img src="../Image/Xiaomi logo.png" alt="logo" class="logo"></a>
+            <h4 class="secondary-light">Xiaomi Australia</h4>
+        </nav>
+        <h2 class="int-p b mt-3 mb-3" id="title">Checkout</h2>
+        <!-- progress bar -->
+        <div class="int-p container">
+            <ul class="progressbar">
+                <li class="active">Shipping</li>
+                <li>Payment</li>
+            </ul>
+        </div>
+        <!-- matin content -->
+        <div class="main int-p">
+            <!-- form -->
+            <div class="form">
+                <form>
+                    <!-- section 1 -->
+                    <div>
+                        <h3>Email Address</h3>
+                        <div class="flex-col">
+                            <label for="email">Email (For Your Order Confirmation)<span style="color:red">*</span></label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <!-- section 2 -->
+                    <div class="flex-col">
+                        <h3>Shipping Address</h3>
+                        <div class="flex-row desktop">
+                            <div class="flex-col pr-1">
+                                <label for="fname">First Name<span style="color:red">*</span></label>
+                                <input type="text" id="fname" name="firstname">
+                            </div>
+                            <div class="flex-col">
+                                <label for="lname">Last Name<span style="color:red">*</span></label>
+                                <input type="text" id="lname" name="lastname">
+                            </div>
+                        </div>
+                        <div class="mobile flex-col">
+                            <label for="fname">First Name<span style="color:red">*</span></label>
+                            <input type="text" id="fname" name="firstname">
+                            <label for="lname">Last Name<span style="color:red">*</span></label>
+                            <input type="text" id="lname" name="lastname">
+                        </div>
+                        <label for="phone">Telephone<span style="color:red">*</span></label>
+                        <input type="text" id="phone" name="phonenumber">
+                        <label for="address">Address<span style="color:red">*</span></label>
+                        <input type="text" id="address" name="address1">
+                        <input type="text" id="address" name="address2">
+                        <label for="city">City<span style="color:red">*</span></label>
+                        <input type="text" id="city" name="cityname">
+                        <!-- select state -->
+                        <label for="state">State<span style="color:red">*</span></label>
+                        <select name="state" id="state">
+                            <option value="select state">Please select a state</option>
+                            <option value="Australian Capital Territory">Australian Capital Territory</option>
+                            <option value="New South Wales">New South Wales</option>
+                            <option value="Northern Territory">Northern Territory</option>
+                            <option value="Queensland">Queensland</option>
+                            <option value="South Australia">South Australia</option>
+                            <option value="Tasmania">Tasmania</option>
+                            <option value="Victoria">Victoria</option>
+                            <option value="Western Australia">Western Australia</option>
+                        </select>
+
+                        <label for="code">Postal Code<span style="color:red">*</span></label>
+                        <input type="text" id="code" name="postalcode">
+                        
+                        <!-- select country -->
+                        <label for="country">Country<span style="color:red">*</span></label>
+                        <select name="country" id="country">
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </div>
+                </form>
+                <!-- Shipping Methods -->
+                <div class="flex-col">
+                    <h3>Shipping Methods</h3>
+                    <div class="flex-row" id="cluster-last">
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" id="capacity" name="radio" value="capacity-2">
+                                <span class="radio__control"></span>
+                            </span>   
+                        </label>
+                        <p>$9.95</p> 
+                        <p>Standard delivery</p> 
+                        <p>Flat Rate</p>
+                    </div>
+                    <div class="flex-row">
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" id="capacity" name="radio" value="capacity-2">
+                                <span class="radio__control"></span>
+                            </span>   
+                        </label>
+                        <p>$14.95</p> 
+                        <p>Express delivery</p> 
+                        <p>Flat Rate</p>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex-col mt-3">
+                    <a href="./checkoutPayment.html" class="button secondary-btn" id="checkout-btn">Continue to Payment</a>
+                    <a href="./shoppingCart.html" class="button tertiary-btn" id="checkout-btn">Back</a>
+                </div>
+            </div>
+            
+            <!-- summary -->
+            <div class="stack right-sider desktop">
+                <h2 class="tc b">Summary</h2>
+                <div class="cluster secondary-light">
+                    <p>Subtotal(1)</p>
+                    <p>$ 325.99</p>
+                </div>
+                <div class="cluster secondary-light">
+                    <p>Tax</p>
+                    <p>$ 27.27</p>
+                </div>
+                <div class="cluster" id="cluster-last">
+                    <p class="b">Order Total</p>
+                    <p class="b brand-color">$ 325.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

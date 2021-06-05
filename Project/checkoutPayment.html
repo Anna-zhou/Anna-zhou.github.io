@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout-Payment</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/checkoutPayment.css">
+    <script src="https://kit.fontawesome.com/c34ab90d24.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../Image/favicon.ico"/>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- nav bar -->
+        <nav class="navbar" id="checkout-nav">
+            <a href="./index.html"><img src="../Image/Xiaomi logo.png" alt="logo" class="logo"></a>
+            <h4 class="secondary-light">Xiaomi Australia</h4>
+        </nav>
+        <h2 class="int-p b mt-3 mb-3" id="title">Checkout</h2>
+        <!-- progress bar -->
+        <div class="int-p container">
+            <ul class="progressbar">
+                <li>Shipping</li>
+                <li class="active">Payment</li>
+            </ul>
+        </div>
+        <!-- main content -->
+        <div class="main int-p">
+            <!-- payment -->
+            <div class="payment">
+                <div>
+                    <h3 class="bottom-line">Payment Methods</h3>
+                    <div class="flex-col">
+                        <div class="flex-row bottom-line">
+                            <label class="radio">
+                                <span class="radio__input pr-1">
+                                    <input type="radio" id="capacity" name="radio" value="capacity-2">
+                                    <span class="radio__control"></span>
+                                </span>   
+                            </label>
+                            <p>PayPal</p> 
+                        </div>
+                        <div class="flex-row bottom-line">
+                            <label class="radio">
+                                <span class="radio__input pr-1">
+                                    <input type="radio" id="capacity" name="radio" value="capacity-2">
+                                    <span class="radio__control"></span>
+                                </span>   
+                            </label>
+                            <p>WeChat Pay</p> 
+                        </div>
+                        <div class="flex-row bottom-line">
+                            <label class="radio">
+                                <span class="radio__input pr-1">
+                                    <input type="radio" id="capacity" name="radio" value="capacity-2">
+                                    <span class="radio__control"></span>
+                                </span>   
+                            </label>
+                            <p>AliPay</p> 
+                        </div>
+                        <div class="flex-row bottom-line">
+                            <label class="radio">
+                                <span class="radio__input pr-1">
+                                    <input type="radio" id="capacity" name="radio" value="capacity-2">
+                                    <span class="radio__control"></span>
+                                </span>   
+                            </label>
+                            <p>Zip</p> 
+                        </div>
+                        <div class="flex-row bottom-line">
+                            <label class="radio">
+                                <span class="radio__input pr-1">
+                                    <input type="radio" id="capacity" name="radio" value="capacity-2">
+                                    <span class="radio__control"></span>
+                                </span>   
+                            </label>
+                            <p>Bank Transfer Payment</p> 
+                        </div>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex-col mt-3">
+                    <a href="./confirmOrder.html" class="button secondary-btn" id="checkout-btn">Confirm my order</a>
+                    <a href="./checkoutShipping.html" class="button tertiary-btn" id="checkout-btn">Back</a>
+                </div>
+            </div>
+
+            <!-- shopping cart summary -->
+            <div class="flex-col right-sider">
+                <h4 class="b bottom-line">YOUR SHOPPING CART</h4>
+                <div class="flex-row bottom-line" id="item">
+                    <img id="item-img" src="/Image/Xiaomi-Redmi-Note-10-Pro-main-S.png" alt="Xiaomi-Redmi-Note-10-Pro">
+                    <div class="flex-col">
+                        <h4 class="mb-1">Redmi Note 10</h4>
+                        <div class="mb-1">
+                            <p>Onvx Gray</p>
+                            <p>8 GB + 128 GB</p>
+                        </div>
+                        <div>
+                            <p class="mb-1">Qty: 1</p>
+                            <p class="b">$ 325.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cluster bottom-line">
+                    <p class="b">Subtotal</p>
+                    <p class="b">AUD $ 325.99</p>
+                </div>
+                <div class="cluster bottom-line" id="code">
+                    <div class="flex-col">
+                        <label for="code" class="brand-color h5">Applay Discount Code</label>
+                        <input type="text" id="code" name="discountcode">
+                    </div>
+                    <a href="#" class="button code-btn">Apply</a>
+                </div>
+                <div class="cluster secondary-light">
+                    <p>Cart Subtotal</p>
+                    <p>$ 325.99</p>
+                </div>
+                <div class="cluster secondary-light">
+                    <div class="flex-col">
+                        <p>Shipping</p>
+                        <h5 id="gr-text">Flat Rate - Standard delivery</h5>
+                    </div>
+                    <p>$ 9.95</p>
+                </div>
+                <div class="cluster secondary-light bottom-line">
+                    <p>Tax</p>
+                    <p>$ 325.99</p>
+                </div>
+                <div class="cluster bottom-line">
+                    <p class="b">Order Total</p>
+                    <p class="b brand-color">AUD $ 325.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

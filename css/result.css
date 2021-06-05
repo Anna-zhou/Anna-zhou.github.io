@@ -1,0 +1,176 @@
+/* layout */
+.cluster{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1vw 0;
+}
+
+.cluster > *{
+    margin: var(--space-s);
+}
+
+.top-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-primary-bg);
+    font-size: 0.9vw;
+    color:#8C8D9C;
+    border-bottom: 1.8px solid #DBDCEB;
+}
+
+.top-line > *{
+    padding-right:1vw;
+    margin: 1vw 0;
+}
+
+.top-line p{
+    font-size: 0.9vw;
+}
+
+/* search result product */
+.stack{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--color-primary-bg);
+    padding: 2vw 1.8vw;
+}
+.stack:hover{
+    transition: box-shadow .3s;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.centre{
+    align-items: center;
+}
+
+.grid-container{
+    margin: var(--space-xl) 0;
+}
+
+.grid-container h2{
+    margin: var(--space-lg) 0;
+}
+
+#item-img {
+    height: 12vw;
+    width: 12vw;
+    align-items: center;
+}
+
+#phone-img {
+    height: 12vw;
+    width: 13vw;
+    align-items: center;
+}
+
+.ori-price{
+    font-size: var(--text-sm);
+    color: var(--color-secondary-light);
+    text-decoration: line-through;
+}
+
+
+/* Responsive design for tablet */
+@media not screen and (min-width: 769px){
+    /* Overall logo, img, icon sizes */
+    #item-img {
+        height: 35vw;
+        width: 35vw;
+    }
+    #phone-img {
+        height: 35vw;
+        width: 36vw;
+        align-items: center;
+        margin-top: 5vw;
+    }
+
+    /* Overall layout */
+    .int-p{
+        padding:0;
+    }
+    .top-line > *{
+        margin: 2vw 0;
+    }
+    .grid-container a{
+        margin: 0;
+    }
+    .stack {
+        width: 48vw;
+        height: 70vw;
+        gap: 4vw;
+        margin: 0;
+    }
+    .cluster{
+        gap: 4vw 0;
+    }
+    /* Overall fonts size */
+    .top-line p{
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+    .top-line span{
+        font-size: 3vw;
+    }
+    .grid-container h2 {
+        font-size: 3vw;
+        margin: var(--space-lg) 2vw;
+    }
+    .grid-container p {
+        font-size: 3vw;
+    }
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 425px){
+    /* Overall logo, img, icon sizes */
+    #item-img {
+        height: 35vw;
+        width: 35vw;
+    }
+    #phone-img {
+        height: 35vw;
+        width: 36vw;
+        align-items: center;
+        margin-top: 5vw;
+    }
+    
+    /* Overall layout */
+    .stack{
+        width: 100vw;
+        height: 70vw;
+        gap: 4vw;
+    }
+    .grid-container .cluster{
+        gap: 4vw 0;
+    }
+    .int-p{
+        padding:0;
+    }
+    .top-line > *{
+        margin: 4vw 0;
+    }
+
+    /* Overall fonts size */
+    .grid-container h2 {
+        font-size: 4vw;
+        margin: var(--space-lg) 2vw;
+    }
+    .grid-container p{
+        font-size: 4vw;
+    }
+    .ori-price{
+        font-size: 2vw;
+    }
+    .top-line p{
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+    .top-line span{
+        font-size: 3vw;
+    }
+}

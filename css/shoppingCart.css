@@ -1,0 +1,272 @@
+/* layout */
+.cluster{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cluster > *{
+    margin: var(--space-s);
+}
+
+.top-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-primary-bg);
+    font-size: 0.9vw;
+    color:#8C8D9C;
+}
+
+.top-line > *{
+    padding-right:1vw;
+    margin: 1vw 0;
+}
+
+.top-line p{
+    font-size: 0.9vw;
+}
+
+/* main content section */
+.mobile{
+    display: none;
+}
+
+.page-wrapper{
+    background-color: var(--color-primary-bg);
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 40vw;
+    padding-top: 2vw;
+    justify-content: space-between;
+}
+
+.f-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.stack{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0 1vw;
+}
+
+.stack h2 {
+    padding: 1vw 0;
+    border-bottom: 1.8px solid var(--gray-light);
+}
+
+.stack .cluster {
+    padding: 1vw 0;
+}
+
+#cluster-last{
+    border-bottom: 1.8px solid var(--gray-light);
+    margin-bottom: 2vw;
+}
+
+table{
+    width:50vw;
+    background-color: white;
+}
+
+.right-sider{
+    width: 20vw;
+    height: 26vw;
+}
+
+#bottom-line{
+    border-bottom: 1.8px solid var(--gray-light);
+}
+
+td{
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main-img{
+    width: 5.5vw;
+}
+
+.mt-3 {
+    margin-top: 3vw;
+}
+
+.mt-5{
+    margin-top: 8vw;
+}
+
+.mb-3 {
+    margin-bottom: 3vw;
+}
+
+.mb > *{
+    margin: 0.9vw 0;
+}
+
+.pt-5{
+    padding-top: 5vw;
+}
+
+.ts{
+    text-align: start;
+    width: 13vw;
+}
+
+.tc{
+    text-align: center;
+}
+
+
+/* Responsive design for tablet */
+@media not screen and (min-width: 769px){
+    /* Overall logo, img, icon sizes */
+    #main-img {
+        width: 28vw;
+        margin-bottom: 19vw;
+    }
+
+    /* Overall layout */
+    .mobile{
+        display: initial;
+    }
+    .desktop{
+        display: none;
+    }
+    .int-p {
+        padding: 3vw;
+    }
+    .cluster > * {
+        margin: 2vw 0;
+    }
+    .Qty-min{
+        width: 6vw;
+        height: 6vw;
+        font-size: 4vw;
+    }
+    .Qty-add{
+        width: 6vw;
+        height: 6vw;
+        font-size: 4vw;
+    }
+    .flex-col p{
+        margin: 2vw 0;
+    }
+    #Qty{
+        margin: 0 5vw;
+    }
+    #width{
+        width:70vw;
+    }
+    .mt-3 {
+        margin-top: 0.5vw;
+    }
+    .mt-5 {
+        margin-top: 2vw;
+    }
+
+    /* Overall fonts size */
+    h2{
+        font-size: 5vw;
+    }
+    h3{
+        font-size: 4vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+    .grid-btn {
+        width: 26vw;
+        height: 8vw;
+        font-size: 3vw;
+    }
+    .inline-btn{
+        height: 9vw;
+        width: 93vw;
+        font-size: 3vw;
+        padding-top: 3vw;
+    }
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 425px){
+    /* Overall logo, img, icon sizes */
+    #main-img {
+        width: 28vw;
+        margin-bottom: 22vw;
+    }
+
+    /* Overall layout */
+    .mobile{
+        display: initial;
+    }
+    .desktop{
+        display: none;
+    }
+    .int-p {
+        padding: 1vw 3vw;
+    }
+    .Qty-min{
+        width: 7vw;
+        height: 7vw;
+        font-size: 5vw;
+    }
+    .Qty-add{
+        width: 7vw;
+        height: 7vw;
+        font-size: 5vw;
+    }
+    .flex-end{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .flex-col p{
+        margin: 2vw 0;
+    }
+    #Qty{
+        margin: 0 5vw;
+    }
+    #width{
+        width:70vw;
+    }
+    .mt-3{
+        margin-top: 3vw;
+    }
+
+
+    /* Overall fonts size */
+    h2{
+        font-size: 6vw;
+    }
+    h3{
+        font-size: 5vw;
+    }
+    p{
+        font-size: 4vw;
+    }
+    .grid-btn {
+        width: 32vw;
+        height: 9vw;
+        font-size: 4vw;
+        padding-top: 2.5vw;
+    }
+    .inline-btn {
+        height: 13vw;
+        width: 93vw;
+        font-size: 5vw;
+        padding-top: 4vw;
+    }
+}
