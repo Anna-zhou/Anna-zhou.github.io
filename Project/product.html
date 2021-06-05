@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <script src="https://kit.fontawesome.com/c34ab90d24.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../Image/favicon.ico"/>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- nav bar -->
+        <nav class="navbar">
+            <div class="mobile-topnav">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </span>
+                <a href="../index.html"><img src="../Image/Xiaomi logo.png" alt="logo" class="logo"></a>
+                <span id="mobile-display">
+                    <a href="#"><i class="fas fa-search fa-lg" id="js-search-toggle" style="color:#1C1D29"></i></a>
+                    <a href="./shoppingCart.html"><i class="fas fa-shopping-cart fa-lg" style="color:#1C1D29"></i></a>
+                </span>
+            </div>
+            <ul class="main-nav " id="js-menu">
+                <li><a href="#" class="nav-links">Xiaomi Phones</a></li>
+                <li><a href="#" class="nav-links">Smart Devices</a></li>
+                <li><a href="#" class="nav-links">Powerbank</a></li>
+                <li><a href="#" class="nav-links">Lifestyle</a></li>
+                <li><a href="#" class="nav-links">Mi Affiliate</a></li>
+                <li><a href="#" class="nav-links">Support</a></li>
+                <li><a href="#" class="nav-links" id="sign-in">SIGN IN</a></li>
+            </ul>
+            <ul class="search-nav  mobile" id="js-search">
+                <li>Search</li>
+                <li><div class="search" id="nav-flex">
+                    <input type="text" class="no-outline" id="search-input" name="search-input"placeholder="Search entire store here...">
+                    <a href="result.html"><i class="fas fa-search fa-lg" style="color:#1C1D29"></i></a>
+                    </div> </li>
+                <li><a href="#" class="nav-links" id="nav-sign-in">SIGN IN</a></li>
+            </ul>
+            <div class="flex-row nav-icon search">
+                <input type="text" class="no-outline desktop" id="search-input" name="search-input"placeholder="Search">
+                <ul class="main-nav"> 
+                    <li><a href="./result.html"><i class="fas fa-search fa-lg" style="color:#1C1D29"></i></a></li>
+                    <li><a href="./shoppingCart.html"><i class="fas fa-shopping-cart fa-lg" style="color:#1C1D29"></i></a></li>
+                    <li><a href="#"><i class="fas fa-user fa-lg" style="color:#1C1D29"></i></a></li>
+                </ul> 
+            </div>
+        </nav>
+        <!-- top line -->
+        <div class="top-line int-p">
+            <a href="#"><p>Xiaomi Phones</p></a><span>/</span>
+            <a href="#"><p>Search</p></a><span>/</span>
+            <a href="#"><p>Redmi Note 10 Pro</p></a>
+        </div>
+        <!-- main content -->
+        <div class="top-main int-p">
+            <!-- image side -->
+            <div class="stack">
+                <img id="main-img" src="../Image/Xiaomi-Redmi-Note-10-Pro-main-lg.png" alt="redmi-note-10-pro-main">
+                <!-- image small -->
+                <div class="cluster s-img">
+                    <img src="../Image/Xiaomi-Redmi-Note-10-Pro-main-S.png" alt="redmi-note-10-pro-main" class="active">
+                    <img src="../Image/Xiaomi-Redmi-Note-10-Pro-side.png" alt="redmi-note-10-pro-side">
+                    <img src="../Image/Xiaomi-Redmi-Note-10-Pro-front.png" alt="redmi-note-10-pro-front">
+                    <img src="../Image/Xiaomi-Redmi-Note-10-Pro-back.png" alt="redmi-note-10-pro-back">
+                </div>
+            </div>
+            <!-- content side -->
+            <div class="mt">
+                <!-- text -->
+                <div class="product-content">
+                    <h2>Redmi Note 10 Pro</h2>
+                    <ul class="secondary-light">
+                        <li>8nm processing technology</li>
+                        <li>108MP + 8MP + 5MP + 2MP quad camera</li>
+                        <li>16MP front camera</li>
+                        <li>Immersive media system</li>
+                        <li>5020mAH (typ) high-capacity battery</li>
+                    </ul>
+                </div>
+                <!-- choose color -->
+                <div class="choose-color">
+                    <p class="b">Choose your color</p>
+                    <div class="form selector cluster">
+                        <!-- color 1 -->
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" id="color" name="radio" value="blue">
+                                <span class="radio__control"></span>
+                                <span class="stack">
+                                    <label for="color">
+                                        <div><img id="img-blue" src="../Image/color-blue.png" alt="blue color"></div>
+                                        <p id="color-name">Glacier Blue</p>
+                                    </label>
+                                </span>
+                            </span>   
+                        </label>
+                        <!-- color 2 -->
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" id="color" name="radio" value="Bronze">
+                                <span class="radio__control"></span>
+                                <span class="stack">
+                                    <label for="color">
+                                        <div><img id="img-bronze" src="../Image/color-bronze.png" alt="Gradient Bronze"></div>
+                                        <p id="color-name">Gradient Bronze</p>
+                                    </label>
+                                </span>
+                            </span>   
+                        </label>
+                        <!-- color 3 -->
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" id="color" name="radio" value="gray">
+                                <span class="radio__control"></span>
+                                <span class="stack">
+                                    <label for="color">
+                                        <div><img id="img-gray" src="../Image/color-gray.png" alt="gray color"></div>
+                                        <p id="color-name">Onyx Gray</p>
+                                    </label>
+                                </span>
+                            </span>   
+                        </label>
+                    </div>
+                </div>
+                <!-- choose capacity -->
+                <div class="capacity">
+                    <p class="b">Choose your capacity</p>
+                    <p class="brand-color">Strange and RAM</p>
+                    <div class="form selector cluster">
+                        <!-- capacity 1 -->
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" id="capacity" name="radio" value="capacity-1">
+                                <span class="radio__control"></span>
+                                <span class="stack inner">
+                                    <p><span class="b">6</span>GB</p>
+                                    <p>+</p>
+                                    <p><span class="b">64</span>GB</p>
+                                </span>
+                            </span>   
+                        </label>
+                        <!-- capacity 2 -->
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" id="capacity" name="radio" value="capacity-2">
+                                <span class="radio__control"></span>
+                                <span class="stack inner">
+                                    <p><span class="b">6</span>GB</p>
+                                    <p>+</p>
+                                    <p><span class="b">128</span>GB</p>
+                                </span>
+                            </span>   
+                        </label>
+                        <!-- capacity 3 -->
+                        <label class="radio">
+                            <span class="radio__input">
+                                <input type="radio" id="capacity" name="radio" value="capacity-3">
+                                <span class="radio__control"></span>
+                                <span class="stack inner">
+                                    <p><span class="b">8</span>GB</p>
+                                    <p>+</p>
+                                    <p><span class="b">64</span>GB</p>
+                                </span>
+                            </span>   
+                        </label>
+                    </div>
+                </div>
+                <!-- Qty, price, button -->
+                <div>
+                    <div class="Qty-p cluster">
+                        <!-- Qty -->
+                        <div class="cluster">
+                            <button type="button" class="button Qty-min">-</button>
+                            <h4 class="b">1</h4>
+                            <button type="button" class="button Qty-add">+</button>
+                        </div>
+                        <!-- price -->
+                        <div class="price">
+                            <h2 class="brand-color b">$325.99</h2>
+                            <p class="ori-price">$814.98</p>
+                            <p class="sm">inc GST</p>
+                        </div>
+                    </div>
+                    <!-- add to cart button -->
+                    <div>
+                        <a href="productAdd.html" class="button inline-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="../JavaScript/navbar.js"></script>
+</html>

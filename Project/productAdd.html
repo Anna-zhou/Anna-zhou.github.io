@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Added</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/productAdd.css">
+    <script src="https://kit.fontawesome.com/c34ab90d24.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../Image/favicon.ico"/>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- nav bar -->
+        <nav class="navbar">
+            <div class="mobile-topnav">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </span>
+                <a href="../index.html"><img src="../Image/Xiaomi logo.png" alt="logo" class="logo"></a>
+                <span id="mobile-display">
+                    <a href="#"><i class="fas fa-search fa-lg" id="js-search-toggle" style="color:#1C1D29"></i></a>
+                    <a href="./shoppingCart.html"><i class="fas fa-shopping-cart fa-lg" style="color:#1C1D29"></i></a>
+                </span>
+            </div>
+            <ul class="main-nav " id="js-menu">
+                <li><a href="#" class="nav-links">Xiaomi Phones</a></li>
+                <li><a href="#" class="nav-links">Smart Devices</a></li>
+                <li><a href="#" class="nav-links">Powerbank</a></li>
+                <li><a href="#" class="nav-links">Lifestyle</a></li>
+                <li><a href="#" class="nav-links">Mi Affiliate</a></li>
+                <li><a href="#" class="nav-links">Support</a></li>
+                <li><a href="#" class="nav-links" id="sign-in">SIGN IN</a></li>
+            </ul>
+            <ul class="search-nav  mobile" id="js-search">
+                <li>Search</li>
+                <li><div class="search" id="nav-flex">
+                    <input type="text" class="no-outline" id="search-input" name="search-input"placeholder="Search entire store here...">
+                    <a href="result.html"><i class="fas fa-search fa-lg" style="color:#1C1D29"></i></a>
+                    </div> </li>
+                <li><a href="#" class="nav-links" id="nav-sign-in">SIGN IN</a></li>
+            </ul>
+            <div class="flex-row nav-icon search">
+                <input type="text" class="no-outline desktop" id="search-input" name="search-input"placeholder="Search">
+                <ul class="main-nav"> 
+                    <li><a href="./result.html"><i class="fas fa-search fa-lg" style="color:#1C1D29"></i></a></li>
+                    <li><a href="./shoppingCart.html"><i class="fas fa-shopping-cart fa-lg" style="color:#1C1D29"></i></a></li>
+                    <li><a href="#"><i class="fas fa-user fa-lg" style="color:#1C1D29"></i></a></li>
+                </ul> 
+            </div>
+        </nav>
+        <!-- top line -->
+        <div class="top-line int-p">
+            <a href="#"><p>XIaomi Phones</p></a><span>/</span>
+            <a href="#"><p>Redmi Note 10 Pro</p></a>
+        </div>
+        <!-- main content -->
+        <div class="top-main int-p">
+            <div class="flex-row">
+                <i class="far fa-check-circle fa-2x" style="color:#FF6A00" id="check-icon"></i>
+                <i class="far fa-check-circle fa-6x" style="color:#FF6A00" id="check-icon-mobile"></i>
+                <h4>1 Item(s) Added to Cart:</h4>
+            </div>
+            <div class="cluster">
+                <img id="main-img" src="../Image/Xiaomi-Redmi-Note-10-Pro-main-lg.png" alt="redmi-note-10-pro-main">
+                <!-- content -->
+                <div class="content">
+                    <div class="cluster">
+                        <h3 class="b">Redmi Note 10 Pro</h3>
+                        <h4>x1</h4>
+                    </div>
+                    <div class="flex-col">
+                        <div class="cluster">
+                            <h4 class="secondary-light">Onyx Gray</h4>
+                        </div>
+                        <div class="cluster">
+                            <h4 class="secondary-light">8 GB + 128 GB</h4>
+                            <h3 class="b">$ 325.99</h3>
+                        </div>
+                    </div>
+                    <!-- button for desktop -->
+                    <div id="desktop-btn">
+                        <a href="index.html" class="button secondary-btn" id="left-btn">Continue Shopping</a>
+                        <!-- <button type="button" class="button secondary-btn" id="left-btn">Continue Shopping</button> -->
+                        <a href="./shoppingCart.html" class="button secondary-btn" id="right-btn">View Chart</a>
+                        <!-- <button type="button" class="button secondary-btn" id="right-btn">View Chart</button> -->
+                    </div>
+                </div>
+            </div>
+            <!-- button for mobile -->
+            <div class="mobile-btn">
+                <a href="./shoppingCart.html" class="button secondary-btn" id="right-btn">View Chart</a>
+                <a href="index.html" class="button secondary-btn" id="left-btn">Continue Shopping</a>
+            </div>
+        </div>
+        <!-- recommendation -->
+        <div class="reco-container">
+            <h3 class="b int-p">You may also like:</h3>
+            <div class="grid-container int-p" id="media-p">
+                <div class="cluster">
+                    <div class="stack centre">
+                        <img id="item-img" src="../Image/xiaomi watch.png" , alt="xiaomi watch">
+                        <p class="grid-item-name">Xiaomi Mi Watch Lite Black</p>
+                        <p class="brand-color">$69.95</p>
+                        <p class="ori-price">$99.95</p>
+                        <button type="button" class="button grid-btn">Add to Cart</button>
+                    </div>
+                    <div class="stack centre">
+                        <img id="item-img" src="../Image/xiaomi-electric-scooter-pro2.jpg" ,
+                            alt="xiaomi electric scooter pro 2">
+                        <p class="grid-item-name">Xiaomi Mi Watch Lite Black</p>
+                        <p class="brand-color">$699.00</p>
+                        <p class="ori-price">$1099.00</p>
+                        <button type="button" class="button grid-btn">Add to Cart</button>
+                    </div>
+                    <div class="stack centre">
+                        <img id="item-img" src="../Image/xiaomi-viomi-smart-ai-robot-vacuum-cleaner.jpg" ,
+                            alt="xiaomi robot vacuum">
+                        <p class="grid-item-name">Xiaomi V3 Vacuum Cleaner</p>
+                        <p class="brand-color">$399.00</p>
+                        <p class="ori-price">$599.00</p>
+                        <button type="button" class="button grid-btn">Add to Cart</button>
+                    </div>
+                    <div class="stack centre">
+                        <img id="item-img" src="../Image/Xiaomi-Router-AX1800-Wifi-6.jpg" , alt="xiaomi wifi6">
+                        <p class="grid-item-name">Mi Alot Router Wifi 6</p>
+                        <p class="brand-color">$69.95</p>
+                        <p class="ori-price">$99.95</p>
+                        <button type="button" class="button grid-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="../JavaScript/navbar.js"></script>
+</html>
